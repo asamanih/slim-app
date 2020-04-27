@@ -1,0 +1,18 @@
+  <?= $this->fetch('header.phtml') ?>
+    <form method="POST" action="/tickets">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">チケット作成</h2>
+          <div class="card-text">
+            <div class="form-group">
+              <label for="subject">件名</label>
+              <input type="text" name="subject" id="subject" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <button class="btn btn-primary">作成</button>
+        </div>
+      </div>
+    </form>
+ <?= $this->fetch('footer.phtml') ?>
